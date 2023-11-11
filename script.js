@@ -19,7 +19,7 @@ const regions = [
             "Village B",
             "Village C",
         ],
-            governmentURL: "http://localhost:3000/Desktop/hala/villages-south-lebanon.html" // Add a URL for the government info
+            governmentURL: "villages-south-lebanon.html" // Add a URL for the government info
 
     },
 
@@ -32,7 +32,7 @@ const regions = [
             "Village Y",
             "Village Z",
         ],
-            governmentURL: "http://localhost:3000/Desktop/hala/villages-bekaa.html" // Add a URL for the government info
+            governmentURL: "villages-bekaa.html" // Add a URL for the government info
 
     },
     {
@@ -44,7 +44,7 @@ const regions = [
             "Village Y",
             "Village Z",
         ],
-            governmentURL: "http://localhost:3000/Desktop/hala/villages-beirut.html" // Add a URL for the government info
+            governmentURL: "villages-beirut.html" // Add a URL for the government info
 
     },
     {
@@ -56,7 +56,7 @@ const regions = [
             "Village Y",
             "Village Z",
         ],
-           governmentURL: "http://localhost:3000/Desktop/hala/villages-mount-lebanon.html" // Add a URL for the government info
+           governmentURL: "villages-mount-lebanon.html" // Add a URL for the government info
 
     },
     {
@@ -68,7 +68,7 @@ const regions = [
             "Village Y",
             "Village Z",
         ],
-           governmentURL: "http://localhost:3000/Desktop/hala/villages-keserwan-jbeil.html" // Add a URL for the government info
+           governmentURL: "villages-keserwan-jbeil.html" // Add a URL for the government info
 
     },
     
@@ -81,7 +81,7 @@ const regions = [
             "Village Y",
             "Village Z",
         ],
-            governmentURL: "http://localhost:3000/Desktop/hala/villages-north-lebanon.html" // Add a URL for the government info
+            governmentURL: "villages-north-lebanon.html" // Add a URL for the government info
 
     },
 
@@ -94,7 +94,7 @@ const regions = [
         "Village Y",
         "Village Z",
     ],
-        governmentURL: "http://localhost:3000/Desktop/hala/villages-akkar.html" // Add a URL for the government info
+        governmentURL: "villages-akkar.html" // Add a URL for the government info
 
 },
 
@@ -107,7 +107,7 @@ const regions = [
         "Village Y",
         "Village Z",
     ],
-         governmentURL: "http://localhost:3000/Desktop/hala/villages-baalbak-hermel.html" // Add a URL for the government info
+         governmentURL: "villages-baalbak-hermel.html" // Add a URL for the government info
 
 },
 
@@ -120,7 +120,7 @@ const regions = [
         "Village Y",
         "Village Z",
     ],
-         governmentURL: "http://localhost:3000/Desktop/hala/villages-nabatieh.html" // Add a URL for the government info
+         governmentURL: "villages-nabatieh.html" // Add a URL for the government info
 
 },
 
@@ -170,10 +170,10 @@ function displayVillageData(villageName) {
 // footer back to main functions
 
 document.getElementById('backtomain').addEventListener('click', function () {
-    window.open("http://localhost:3000/Desktop/hala/index.html", '_self');
+    window.open("index.html", '_self');
 });
 //header back to main
 function goToMainPage() {
-    window.location.href = "http://localhost:3000/Desktop/hala/index.html";
+    window.location.href = "index.html";
 }
 
