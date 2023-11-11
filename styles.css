@@ -86,6 +86,18 @@ h1{
     cursor: pointer; /* Change cursor style if needed */
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        /* Adjust styles for smaller screens */
+    }
+    #map-container {
+        width: 80%;
+        max-width: none;
+        height: 500px;
+        max-height: none;
+    }
+}
+
 
 
 
