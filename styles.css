@@ -5,7 +5,7 @@ body {
     padding: 0;
     padding-top: 50px; /* Adjust this value based on your fixed header height */
     height: 500px; /* Adjust the height as needed */
-     background: url('http://localhost:3000/Desktop/hala/images/back1.png') center center fixed;
+     background: url('back1.png') center center fixed;
     background-size: cover;
 }
  header {
