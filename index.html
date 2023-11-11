@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"css/ content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+      <nav>
+                <a href="about.html" target="_blank">About Us</a>
+                <a href="contact.html" target="_blank">Contact Us</a>
+                <a href="governments.html" target="_blank">Governorates</a>
+            
+        </nav>
+
+    <h1>List of Lebanese municipalities</h1>
+     
+      <div id="villages-list" style="display: none;">
+        <div id="al-janub" class="government">
+            <h2>Villages in Al-Janub</h2>
+            <ul id="village-list-al-janub">
+                <li data-village="Village A">Village A</li>
+                <li data-village="Village B">Village B</li>
+                <li data-village="Village C">Village C</li>
+            </ul>
+        </div>
+          <div id="nabatieh" class="government">
+            <h2>Villages in Nabatieh</h2>
+            <ul id="village-list-nabatieh">
+                <li data-village="Village A">Village A</li>
+                <li data-village="Village B">Village B</li>
+                <li data-village="Village C">Village C</li>
+            </ul>
+        </div>
+        <div id="mohafazat-beqaa" class="government">
+            <h2>Villages in Mohafazat Béqaa</h2>
+            <ul id="village-list-mohafazat-beqaa">
+                <li data-village="Village X">Village X</li>
+                <li data-village="Village Y">Village Y</li>
+                <li data-village="Village Z">Village Z</li>
+            </ul>
+        </div>
+        <div id="mohafazat-beyrouth" class="government">
+            <h2>Villages in Mohafazat Beyrouth</h2>
+            <ul id="village-list-mohafazat-beyrouth">
+                <li data-village="Village M">Village M</li>
+                <li data-village="Village N">Village N</li>
+                <li data-village="Village P">Village P</li>
+                <!-- Add actual village names for Mohafazat Beyrouth here -->
+            </ul>
+        </div>
+        <div id="mohafazat-mont-liban" class="government">
+            <h2>Villages in Mohafazat Mont-Liban</h2>
+            <ul id="village-list-mohafazat-mont-liban">
+                <li data-village="Village Q">Village Q</li>
+                <li data-village="Village W">Village W</li>
+                <li data-village="Village E">Village E</li>
+                <!-- Add actual village names for Mohafazat Mont-Liban here -->
+            </ul>
+        </div>
+        <div id="mohafazat-kesrwan-Jbeil" class="government">
+            <h2>Villages in Mohafazat Keserwan-Jbeil</h2>
+            <ul id="village-list-mohafazat-keserwan-jbeil">
+                <li data-village="Village Q">Village Q</li>
+                <li data-village="Village W">Village W</li>
+                <li data-village="Village E">Village E</li>
+                <!-- Add actual village names for Mohafazat Keserwan-Jbeil here -->
+            </ul>
+        </div>
+        <div id="muhafazat-lubnan-ash-shamali" class="government">
+            <h2>Villages in MUḨĀFAZ̧AT LUBNĀN ASH SHAMĀLĪ</h2>
+            <ul id="village-list-muhafazat-lubnan-ash-shamali">
+                <li data-village="Village R">Village R</li>
+                <li data-village="Village T">Village T</li>
+                <li data-village="Village O">Village O</li>
+                <!-- Add actual village names for MUḨĀFAZ̧AT LUBNĀN ASH SHAMĀLĪ here -->
+            </ul>
+        </div>
+        <div id="akkar-gov" class="government">
+            <h2>Villages in Akkar</h2>
+            <ul id="village-list-akkar-gov">
+                <li data-village="Village R">Village R</li>
+                <li data-village="Village T">Village T</li>
+                <li data-village="Village O">Village O</li>
+                <!-- Add actual village names for Akkar here -->
+            </ul>
+        </div>
+        <div id="baalbak-hermel-gov" class="government">
+            <h2>Villages in Baalbak Hermel</h2>
+            <ul id="village-list-baalbak-hermel-gov">
+                <li data-village="Village R">Village R</li>
+                <li data-village="Village T">Village T</li>
+                <li data-village="Village O">Village O</li>
+                <!-- Add actual village names for Baalbak Hermel here -->
+            </ul>
+        </div>
+        
+        <!-- Add similar sections for other regions and their village lists as needed -->
+    </div>
+
+    <div id="village-data" style="display: none;">
+        <!-- Data for the clicked village will be displayed here -->
+    </div>
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+      <script>
+        // JavaScript code here
+
+       
+         function openGovernmentPage(url) {
+            const uniqueTabId = generateUniqueTabId();
+            window.open(`${url}?tabId=${uniqueTabId}`, '_blank');
+        }
+
+        function generateUniqueTabId() {
+            // Generate a unique identifier (e.g., a UUID) for the tab
+            // You can use a library or an algorithm to generate a unique ID
+            // For simplicity, we'll use a random number for demonstration
+            return Math.random().toString(36).substring(2);
+        }
+
+        // Your map and other code here
+    </script>
+</body>
+</html>
+

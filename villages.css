@@ -1,0 +1,93 @@
+/* styles.css */
+
+body {
+    font-family: 'Fjalla One', Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+/* Add your custom styles here */
+.fixed-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+    padding: 10px;
+    text-align: center;
+    z-index: 999; /* Ensures the header stays above other content */
+}
+
+/* Add more styles for your page content as needed */
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+h1 {
+    background-color: #0074d9;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+#back-to-main {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#back-to-main:hover {
+    background-color: #45a049;
+}
+#back-to-main-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+#back-to-main-bottom::before {
+    content: '\2190'; /* Unicode character for left arrow */
+    font-size: 20px;
+    margin-right: 5px;
+}

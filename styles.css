@@ -1,0 +1,91 @@
+body {
+    font-family: 'Fjalla One', Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px; /* Adjust this value based on your fixed header height */
+    height: 500px; /* Adjust the height as needed */
+     background: url('http://localhost:3000/Desktop/hala/images/back1.png') center center fixed;
+    background-size: cover;
+}
+ header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        h1{
+            box-shadow: 0 0 50px;
+        }
+
+#map-container {
+    position: relative;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Maximum width for the map */
+    height: 140%; /* Adjust the height as needed */
+    max-height: 800px; /* Maximum height for the map */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Add this to center the container horizontally */
+
+    border: 2px solid #333; /* Add a border to the map container */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    overflow: hidden; /* Hide overflow content (e.g., rounded corners) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Add a subtle box shadow for depth */
+
+
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+
+    border: 2px solid #333; /* Add a border to the map */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+
+
+}
+
+
+
+
+/* Add this CSS for the village list items to change cursor on hover */
+#village-list-al-janub li, #village-list-mohafazat-beqaa li {
+    cursor: pointer;
+}
+
+/* Add this CSS to change the cursor style for the map area */
+
+
+h1{
+    text-align: center;
+     z-index: 1;
+}
+
+#villages-list {
+    position: relative; /* Set the position to relative */
+    z-index: 2; /* Ensure the village list is above the map */
+}
+
+.government:hover {
+    background-color: #ff0000; /* Change to the desired color */
+    cursor: pointer; /* Change cursor style if needed */
+}
+
+
+
+
